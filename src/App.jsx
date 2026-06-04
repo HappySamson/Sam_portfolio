@@ -8,6 +8,8 @@ import Projects from './components/Projects';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import FloatingWhatsApp from './components/FloatingWhatsApp';
+import Summary from './components/Summary';
+import Internships from './components/Internships';
 
 import './App.css';
 
@@ -28,9 +30,11 @@ function App() {
       <Navbar theme={theme} toggleTheme={toggleTheme} />
       <main>
         <Hero />
+        {/* <Summary /> */}
         <Education />
         <Skills />
         <Certifications />
+        <Internships />
         <Projects />
         <Contact />
       </main>

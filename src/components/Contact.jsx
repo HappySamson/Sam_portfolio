@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Mail, MapPin, Send, MessageSquare } from 'lucide-react';
+import { Mail, MapPin, Send, MessageSquare, Phone, Code, User, Globe } from 'lucide-react';
 import './Contact.css';
 
 const Contact = () => {
@@ -34,7 +34,7 @@ const Contact = () => {
   return (
     <section id="contact" className="contact-section">
       <div className="container">
-        <motion.h2 
+        <motion.h2
           className="section-title"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -43,9 +43,9 @@ const Contact = () => {
         >
           Get In <span className="text-gradient">Touch</span>
         </motion.h2>
-        
+
         <div className="contact-grid">
-          <motion.div 
+          <motion.div
             className="contact-info"
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -54,8 +54,8 @@ const Contact = () => {
           >
             <h3 className="contact-heading">Let's build something together!</h3>
             <p className="contact-desc">
-              I am actively looking for entry-level backend/Python developer roles. 
-              My inbox is always open. Whether you have a question or just want to say hi, 
+              I am actively looking for entry-level backend/Python developer roles.
+              My inbox is always open. Whether you have a question or just want to say hi,
               I'll try my best to get back to you!
             </p>
             <div className="contact-methods">
@@ -77,11 +77,47 @@ const Contact = () => {
                   <p className="method-value">Vellore, Tamil Nadu</p>
                 </div>
               </div>
+              <div className="contact-method-item">
+                <div className="method-icon glass">
+                  <Phone size={20} />
+                </div>
+                <div>
+                  <span className="method-label">Phone</span>
+                  <p className="method-value">9363125355</p>
+                </div>
+              </div>
+              <div className="contact-method-item">
+                <div className="method-icon glass">
+                  <User size={20} />
+                </div>
+                <div>
+                  <span className="method-label">LinkedIn</span>
+                  <p className="method-value"><a href="https://www.linkedin.com/in/sam-son-3491932a2" target="_blank" rel="noreferrer">sam-son-3491932a2</a></p>
+                </div>
+              </div>
+              <div className="contact-method-item">
+                <div className="method-icon glass">
+                  <Code size={20} />
+                </div>
+                <div>
+                  <span className="method-label">GitHub</span>
+                  <p className="method-value"><a href="https://github.com/HappySamson/" target="_blank" rel="noreferrer">HappySamson</a></p>
+                </div>
+              </div>
+              <div className="contact-method-item">
+                <div className="method-icon glass">
+                  <Globe size={20} />
+                </div>
+                <div>
+                  <span className="method-label">Portfolio</span>
+                  <p className="method-value"><a href="https://sam-portfolio-lyart-six.vercel.app/" target="_blank" rel="noreferrer">sam-portfolio-lyart-six</a></p>
+                </div>
+              </div>
             </div>
           </motion.div>
-          
-          <motion.form 
-            className="contact-form glass" 
+
+          <motion.form
+            className="contact-form glass"
             onSubmit={handleEmailSubmit}
             initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -90,34 +126,34 @@ const Contact = () => {
           >
             <div className="form-group">
               <label htmlFor="name" className="code-font">Name</label>
-              <input 
-                type="text" 
-                id="name" 
-                placeholder="John Doe" 
-                value={formData.name} 
-                onChange={handleChange} 
-                required 
+              <input
+                type="text"
+                id="name"
+                placeholder="sam"
+                value={formData.name}
+                onChange={handleChange}
+                required
               />
             </div>
             <div className="form-group">
               <label htmlFor="email" className="code-font">Email</label>
-              <input 
-                type="email" 
-                id="email" 
-                placeholder="john@example.com" 
-                value={formData.email} 
-                onChange={handleChange} 
-                required 
+              <input
+                type="email"
+                id="email"
+                placeholder="sam@gmail.com"
+                value={formData.email}
+                onChange={handleChange}
+                required
               />
             </div>
             <div className="form-group">
               <label htmlFor="message" className="code-font">Message</label>
-              <textarea 
-                id="message" 
-                rows="5" 
-                placeholder="Let's write some code..." 
-                value={formData.message} 
-                onChange={handleChange} 
+              <textarea
+                id="message"
+                rows="5"
+                placeholder="Let's write some code..."
+                value={formData.message}
+                onChange={handleChange}
                 required
               ></textarea>
             </div>
@@ -125,8 +161,8 @@ const Contact = () => {
               <button type="submit" className="btn-primary form-btn">
                 Send Email <Send size={18} />
               </button>
-              <button 
-                type="button" 
+              <button
+                type="button"
                 className="btn-secondary form-btn wa-btn"
                 onClick={handleWhatsAppSubmit}
               >

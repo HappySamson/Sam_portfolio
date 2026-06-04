@@ -5,13 +5,30 @@ import './Projects.css';
 const Projects = () => {
   const projectsData = [
     {
-      title: "Sacred Heart Church Management System",
-      description: "A full-stack web application developed to manage church activities, memberships, and events efficiently. Features a secure admin dashbord and real-time database updates.",
-      techStack: ["PHP", "MySQL", "JavaScript", "HTML", "CSS"],
-      githubUrl: "https://github.com/HappySamson/",
+      title: "Marine Root Tool Manufacturing And Environmental Impact Analysis For Seagrass Growth",
+      description: "Web‑based system for designing seagrass cultivation tools, estimating material, predicting durability with TabNet Regressor, monitoring growth, and assessing CO₂ absorption and marine ecosystem support.",
+      techStack: ["HTML", "CSS", "JavaScript", "Python", "Django", "MySQL"],
+      githubUrl: "https://github.com/HappySamson/Marine-seagrass",
       liveUrl: "",
       type: "Full Stack"
     },
+    {
+      title: "Sacred Heart Church Management System",
+      description: "Full‑stack web app for church administration, event management, news/blog publishing, payment tracking, and secure admin dashboard.",
+      techStack: ["PHP", "MySQL", "JavaScript", "HTML", "CSS", "jQuery"],
+      githubUrl: "https://github.com/HappySamson/SHC-gandhinagar",
+      liveUrl: "",
+      type: "Full Stack"
+    },
+    {
+      title: "Quiz Application",
+      description: "User‑friendly quiz portal built with React.js for technical interview practice, featuring instant results and clean UI.",
+      techStack: ["React.js", "CSS3", "JavaScript"],
+      githubUrl: "",
+      liveUrl: "https://quiz-app-one-roan-39.vercel.app/",
+      type: "React App"
+    },
+
     {
       title: "Interactive Quiz Application",
       description: "A fast and responsive quiz portal built with React.js. It allows users to take technical tests and get instant results, featuring a clean UI and state management.",
